@@ -36,7 +36,7 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
     } else {
       setTheme(lightTheme);
     }
-    setMounted(true); // We are ready to render now
+    setMounted(true);
   }, []);
 
   const toggleTheme = () => {
@@ -47,7 +47,7 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
     });
   };
 
-  if (!mounted) return null; // avoid mismatch during SSR hydration
+  if (!mounted) return null; 
 
   return (
     <ThemeContext.Provider value={{ colors: theme.colors, toggleTheme }}>
