@@ -40,7 +40,7 @@ const ProductDetailsPage = () => {
       product.product // pass old product name for reference
     )
 
-    // Redirect back to homepage or product list
+    // Redirect back to homepage 
     router.push('/')
   }
 
