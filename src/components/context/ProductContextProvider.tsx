@@ -23,9 +23,6 @@ const ProductContextProvoder=({children}:{children:React.ReactNode})=>{
     localStorage.setItem("products", JSON.stringify(products))
   }, [products])
 
-
-
-
     // fuction to add a new product to the list
 
     const addProduct=(product:Product)=>{

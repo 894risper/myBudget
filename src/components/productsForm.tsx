@@ -33,7 +33,7 @@ const ProductsForm = () => {
   return (
     <div className='flex flex-col items-center justify-center h-screen'>
 <h2 className='font-semibold text-fuchsia-500'>BUDGET APP</h2>
-<div className=' sm:p-4 md:flex justify-between border border-gray-300 p-4 rounded-md shadow-md '>
+<div className='  md:flex justify-between border border-gray-300 p-4 rounded-md shadow-md '>
     
      <div>
         <h2 className='text-xl font-bold  text-blue-400 mb-4'> Products Form</h2>   
