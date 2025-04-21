@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ProductContextProvoder from "@/components/context/ProductContextProvider";
+import ProductContextProvider from "@/components/context/ProductContextProvider";
 import ThemeToggleButton from "@/components/context/themeToggle";
 import ThemeProvider from "@/components/context/themeProvider";
 
@@ -31,10 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-        <ProductContextProvoder>
+        <ProductContextProvider>
           <ThemeToggleButton/>
         {children}
-        </ProductContextProvoder>
+        </ProductContextProvider>
         </ThemeProvider>
       </body>
     </html>
